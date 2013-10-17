@@ -5,7 +5,7 @@ User.create :name => 'Dev Bootcamp Student', :email => 'me@example.com', :passwo
 5.times do
   User.create :name => Faker::Name.name, :email => Faker::Internet.email, :password => 'password'
 end
-new_user.skills << Skill.where(id: rand(1..(computer_skills.length + design_skills.length))
+new_user.skills << Skill.where(id: rand(1..(computer_skills.length + design_skills.length)))
 
 # create a few technical skills
 computer_skills = %w(Ruby Sinatra Rails JavaScript jQuery HTML CSS)
